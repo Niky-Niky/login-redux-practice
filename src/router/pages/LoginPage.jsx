@@ -1,4 +1,4 @@
-import { Form } from "components/Form"
+import { FormComponent } from '../Form'
 import { useSelector } from "react-redux"
 import { UserMenu } from "../../components/UserMenu"
 
@@ -10,7 +10,7 @@ export const LoginPage = () => {
         {isLoggedIn ? (
             <UserMenu/>
         ) : (
-            <Form/>
+            <FormComponent/>
         )}
         </>
     )
